@@ -1,0 +1,10 @@
+version: "3"
+services:
+  
+  foliant:
+    build: 
+      context: .
+      dockerfile: foliant.Dockerfile
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app

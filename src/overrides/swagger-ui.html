@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta
+  name="description"
+  content="SwaggerUI"
+/>
+<link rel="stylesheet" href="{{ base_url }}/assets/swagger-ui-dist/swagger-ui.css" />
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+  <div id="swagger-ui"></div>
+  <script src="{{ base_url }}/assets/swagger-ui-dist/swagger-ui-bundle.js" crossorigin></script>
+  <script src="{{ base_url }}/assets/swagger-ui-dist/swagger-ui-standalone-preset.js" crossorigin></script>
+  <script>
+    window.onload = () => {
+      window.ui = SwaggerUIBundle({
+        url: '{{ base_url }}/en/API/swagger/petstore.json',
+        dom_id: '#swagger-ui',
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        layout: "StandaloneLayout",
+      });
+    };
+  </script>
+{% endblock %}

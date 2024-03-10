@@ -1,0 +1,55 @@
+title: Foliant Help Demo
+slug: public/foliant-help-demo
+
+preprocessors:
+  - includes
+  - flags
+
+chapters: !include ./configs/mkdocs-chapters.yml
+
+backend_config:
+  mkdocs:
+    use_title: true
+    use_chapters: true
+    use_headings: true
+    mkdocs.yml:
+      plugins:
+        - search:
+            lang: 
+              - en
+        - exclude:
+            glob:
+              - .DS_Store
+              - "*/.DS_Store"
+      markdown_extensions:
+        - admonition
+        - pymdownx.details
+        - pymdownx.superfences
+        - sane_lists
+        - attr_list
+        - md_in_html
+        - pymdownx.emoji:
+            emoji_index: !!python/name:material.extensions.emoji.twemoji
+            emoji_generator: !!python/name:material.extensions.emoji.to_svg
+        - toc:
+            slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      theme:
+        logo: assets/logo/
+        favicon: assets/logo/
+        font:
+          text: Roboto 
+          code: Roboto Mono
+        name: material
+        language: en
+        custom_dir: docs/overrides
+        features:
+          - navigation.tracking
+          - navigation.indexes
+          - navigation.tabs
+          - navigation.top
+          - search.suggest
+          - search.highlight
+          - search.share
+          - content.code.copy
+      extra:
+        generator: false
