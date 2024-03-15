@@ -13,6 +13,7 @@ backend_config:
     use_chapters: true
     use_headings: true
     mkdocs.yml:
+      repo_url: https://github.com/lejbron/foliant-help-example
       plugins:
         - search:
             lang: 
@@ -36,6 +37,8 @@ backend_config:
       theme:
         logo: assets/logo/foliant-logo.png
         favicon: assets/logo/
+        icon:
+          repo: fontawesome/brands/github-alt
         font:
           text: Roboto 
           code: Roboto Mono
