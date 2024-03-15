@@ -50,6 +50,7 @@ backend_config:
           - navigation.indexes
           - navigation.tabs
           - navigation.top
+          - navigation.footer
           - search.suggest
           - search.highlight
           - search.share
@@ -73,4 +74,5 @@ backend_config:
               icon: material/brightness-4
               name: Switch to system preference
       extra:
-        generator: false
+        generator: true
+      copyright: 2024 &copy; lejbron
