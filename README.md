@@ -41,7 +41,13 @@ File/Folder | Purpose
 
 ## Buid swagger-ui package
 
-1. git clone swagger-ui
+https://github.com/swagger-api/swagger-ui
 
 https://docs.docker.com/guides/walkthroughs/multi-container-apps/
 
+## Change deployment path
+
+If you want to rename the resulting folder with static files do the following:
+
+1. Change `slug` value in the `foliant-mkdocs.yml`.
+2. Update `steps - with - path` value.
