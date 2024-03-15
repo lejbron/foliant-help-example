@@ -1,6 +1,6 @@
 ---
 template: swagger-ui.html
-title: GIB Theme Demo
+title: Foliant Help Demo
 hide: 
     - toc
 ---
