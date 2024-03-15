@@ -10,7 +10,7 @@ hide:
 
     ---
 
-    Learn more about the general paradigm used as the basis for Help.
+    Learn more about the general paradigm used as the basis for Help
 
     [:octicons-arrow-right-24: Concepts](./en/Concepts/Diataxis/Diataxis.md)
 
@@ -18,7 +18,7 @@ hide:
 
     ---
 
-    [Embed](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/) all Swagger UI's features directly in your HTML by using unpkg's interface.
+    [Embed](https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/) all Swagger UI's features directly in your HTML by using unpkg's interface
 
     [:octicons-arrow-right-24: API](./en/API/Swagger%20Petstore%20Sample/Swagger%20Petstore%20Sample.md)
 

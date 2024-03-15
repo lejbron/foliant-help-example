@@ -134,7 +134,6 @@ cython_debug/
 notes.md
 .obsidian
 __folianttmp__
-public
 *.log
 
 swagger-ui/

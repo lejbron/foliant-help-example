@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+  </style>
+{% endblock %}
+
+{% block tabs %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+  <hr>
+  <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
