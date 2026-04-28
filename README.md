@@ -39,7 +39,7 @@ File/Folder | Purpose
 `overrides/main.html` | MkDocs Material general templates upadte.
 `overrides/swagger-ui.html` | Special page for rendering swagger-ui. Includes the link to the specification `.json` file.
 
-## Buid swagger-ui package
+## Build swagger-ui package
 
 https://github.com/swagger-api/swagger-ui
 
